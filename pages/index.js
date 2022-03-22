@@ -1,10 +1,16 @@
-import NextLink from "next/link"
-import { Container, Box, Heading, Image, useColorModeValue, Link, Button } from "@chakra-ui/react"
-import { ChevronRightIcon } from "@chakra-ui/icons"
-import Layout from "../components/layouts/article"
-import Section from "../components/section"
-import Paragraph from "../components/paragraph"
-import { BioSection, BioYear  } from "../components/bio"
+import NextLink from 'next/link'
+import { Container, Box, Heading, Image, useColorModeValue, Link, List, ListItem, Button, Icon } from '@chakra-ui/react'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import Layout from '../components/layouts/article'
+import Section from '../components/section'
+import Paragraph from '../components/paragraph'
+import { BioSection, BioYear  } from '../components/bio'
+import {
+    IoMail,
+    IoLogoLinkedin,
+    IoLogoGithub,
+    IoLogoDiscord
+} from 'react-icons/io5'
 
 const Page = () => {
     return (
@@ -69,7 +75,7 @@ const Page = () => {
                 </BioSection>
                 <BioSection>
                     <BioYear>2020</BioYear>
-                    Graduate Bachelor of Science in Computer Science at King mongkut's institute of technology ladkrabang - KMITL 
+                    Graduate Bachelor of Science in Computer Science at King Mongkut&apos;s institute of technology ladkrabang - KMITL 
                 </BioSection>
                 <BioSection>
                     <BioYear>2020 to Present</BioYear>
@@ -86,6 +92,38 @@ const Page = () => {
                     <Link href="https://steamcommunity.com/id/Nekofrozen"> Gaming</Link>
                     , Cryptocurrency, Movie, NFT
                 </Paragraph>
+            </Section>
+
+            <Section delay={0.3}>
+                <Heading as="h3" variant="section-title">
+                    Contact
+                </Heading>
+                <List>
+                    <ListItem>
+                        <Link href="https://github.com/nekofrozen" target="_blank">
+                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub} />}>
+                                  @Nekofrozen
+                            </Button>
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <Link href="https://www.linkedin.com/in/nattanan-jame/" target="_blank">
+                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoLinkedin} />}>
+                                    Nattanan Chiarsilanuwat
+                            </Button>
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoMail} />}>
+                                    nattanan.chiarsilanuwat@gmail.com
+                            </Button>
+                    </ListItem>
+                    <ListItem>
+                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoDiscord} />}>
+                                    Miyabi#2389
+                            </Button>
+                    </ListItem>
+                </List>
             </Section>
             </Container>
         </Layout>

@@ -1,4 +1,4 @@
-import { Container, Box, Heading, SimpleGrid, Divider  } from "@chakra-ui/react"
+import { Container, Heading, SimpleGrid, Divider  } from "@chakra-ui/react"
 import Section from "../components/section"
 import { WorkGridItem } from "../components/grid-item"
 import Layout from "../components/layouts/article"
@@ -22,7 +22,7 @@ const Works = () => {
                             title="Strong boy" 
                             thumbnail={axie1}
                         >
-                            It's me in real life
+                            waiting for descriptions
                         </WorkGridItem>
                     </Section>
                     <Section>
@@ -31,7 +31,7 @@ const Works = () => {
                             title="Litte Girl" 
                             thumbnail={axie2}
                         >
-                            It's me in real life
+                            waiting for descriptions
                         </WorkGridItem>
                     </Section>
                 </SimpleGrid>
@@ -50,7 +50,7 @@ const Works = () => {
                             title="Strong boy" 
                             thumbnail={axie3}
                         >
-                            It's me in real life
+                            It&apos;s me in real life
                         </WorkGridItem>
                     </Section>
                     <Section>
@@ -59,7 +59,7 @@ const Works = () => {
                             title="Litte Girl" 
                             thumbnail={axie4}
                         >
-                            It's me in real life
+                            waiting for descriptions
                         </WorkGridItem>
                     </Section>
                 </SimpleGrid>

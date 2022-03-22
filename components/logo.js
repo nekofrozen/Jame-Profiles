@@ -13,7 +13,7 @@ line-height: 20px;
 padding: 10px;
 
 img {
-    transition: 200ms ease;
+    // transition: 200ms ease;
 }
 
 &:hover img {
@@ -21,7 +21,7 @@ img {
 }
 `
 const Logo = () => {
-    const footPrintImg = `/images/footprint${useColorModeValue('','-dark')}.png`
+    const footPrintImg = `/images/axie1${useColorModeValue('','-dark')}.png`
 
     return (
         <Link href="/">

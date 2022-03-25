@@ -6,13 +6,13 @@ import Layout from '../../components/layouts/article'
 
 const Work = () => {
     return (
-        <Layout title="axie1">
+        <Layout title="Jame-homepage">
             <Container>
                 <Title>
-                    Axie1 <Badge>2022</Badge>
+                    Jame Homepage <Badge>2022</Badge>
                 </Title>
                 <P>
-                    This My Profolio with Next.js
+                    This is my First Website about me. Inspired and build as devaslife channel on Youtube 
                 </P>
                 <List ml={4} my={4}> 
                     <ListItem>
@@ -25,7 +25,7 @@ const Work = () => {
                         <span>Next.js, Chakra UI, Framer Motion, and Three.js</span>
                     </ListItem>                
                 </List>
-                <WorkImage src="/images/works/profolio-1.png" alt="profolio" />
+                <WorkImage src="/images/works/homepage-1.png" alt="profolio" />
             </Container>
         </Layout>
     )

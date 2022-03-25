@@ -17,14 +17,14 @@ const Page = () => {
         <Layout>
             <Container>
                 <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
-                    Hello, I&apos;m a Software Engineer Based in Thailand!
+                    Hello, This is Jame a Software Engineer 
                 </Box>
                 <Box display={{md:'flex'}}>
                     <Box flexGrow={1}>
                         <Heading as="h2" variant="page-title">
                             Nattanan Chiarsilanuwat
                         </Heading>
-                        <p>Developer / Investor / Crypto Treder</p>
+                        <p>Software Engineer / Treder</p>
                     </Box>
                     <Box 
                         flexShrink={0} 
@@ -52,14 +52,14 @@ const Page = () => {
                     <Paragraph> 
                         Software engineer with 2+ years of experience. 
                         developing, testing, and maintaining enterprise software applications at{' '}
-                        <NextLink href="/">
+                        <NextLink href="/experience">
                             <Link>Work</Link>
                         </NextLink>
                     </Paragraph>
                     <Box align="center" my={4}>
-                        <NextLink href="/works">
+                        <NextLink href="/experience">
                             <Button rightIcon={<ChevronRightIcon/>} colorScheme="teal">
-                                My Portfolio
+                                Experience
                             </Button>
                         </NextLink>
                     </Box>  
@@ -74,8 +74,16 @@ const Page = () => {
                     Born in Bangkok, Thailand.
                 </BioSection>
                 <BioSection>
+                    <BioYear>2019</BioYear>
+                    Software Developer Internship Worked at Gettgo
+                </BioSection>
+                <BioSection>
                     <BioYear>2020</BioYear>
                     Graduate Bachelor of Science in Computer Science at King Mongkut&apos;s institute of technology ladkrabang - KMITL 
+                </BioSection>
+                <BioSection>
+                    <BioYear>2020 </BioYear>
+                    Full-Stack Developer Worked at Achievers Thailands
                 </BioSection>
                 <BioSection>
                     <BioYear>2020 to Present</BioYear>
@@ -90,7 +98,7 @@ const Page = () => {
                 <Paragraph>
                     Programming, Music, {''}
                     <Link href="https://steamcommunity.com/id/Nekofrozen"> Gaming</Link>
-                    , Cryptocurrency, Movie, NFT
+                    , Movie, Cryptocurrency, NFT
                 </Paragraph>
             </Section>
 

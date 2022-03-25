@@ -1,12 +1,11 @@
-import { Container, Heading, SimpleGrid, Divider  } from "@chakra-ui/react"
+import { Container, Heading, SimpleGrid } from "@chakra-ui/react"
 import Section from "../components/section"
 import { WorkGridItem } from "../components/grid-item"
 import Layout from "../components/layouts/article"
 
-import axie1 from '../public/images/works/axie-temp1.png'
-import axie2 from '../public/images/works/axie-temp2.png'
-import axie3 from '../public/images/works/axie-temp3.png'
-import axie4 from '../public/images/works/axie-temp4.png'
+import homepage from '../public/images/works/homepage-1.png'
+import myfirstVox from '../public/images/works/my-voxel-art-thumbnail.png'
+
 
 const Works = () => {
     return (
@@ -18,51 +17,24 @@ const Works = () => {
                 <SimpleGrid columns={[1,1,2]} gap={6}>
                     <Section>
                         <WorkGridItem 
-                            id="axie1" 
-                            title="Strong boy" 
-                            thumbnail={axie1}
+                            id="jame-homepage" 
+                            title="Jame-Homepage" 
+                            thumbnail={homepage}
                         >
-                            waiting for descriptions
+                            First Website about me 
                         </WorkGridItem>
                     </Section>
                     <Section>
                         <WorkGridItem 
-                            id="axie2" 
-                            title="Litte Girl" 
-                            thumbnail={axie2}
+                            id="my-voxel-art" 
+                            title="My First Voxel" 
+                            thumbnail={myfirstVox}
                         >
-                            waiting for descriptions
+                            My first voxel art create
                         </WorkGridItem>
                     </Section>
                 </SimpleGrid>
 
-                <Section delay={0.1}>
-                    <Divider my={6} />
-                    <Heading as="h3" fontSize={20} mb={4}>
-                        Old Works
-                    </Heading>
-                </Section>
-                
-                <SimpleGrid columns={[1,1,2]} gap={6}>
-                    <Section>
-                        <WorkGridItem 
-                            id="axie3" 
-                            title="Strong boy" 
-                            thumbnail={axie3}
-                        >
-                            It&apos;s me in real life
-                        </WorkGridItem>
-                    </Section>
-                    <Section>
-                        <WorkGridItem 
-                            id="axie4" 
-                            title="Litte Girl" 
-                            thumbnail={axie4}
-                        >
-                            waiting for descriptions
-                        </WorkGridItem>
-                    </Section>
-                </SimpleGrid>
             </Container>
         </Layout>
     )

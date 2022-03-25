@@ -8,7 +8,7 @@ function easeOutCirc(x) {
     return Math.sqrt(1 - Math.pow(x - 1, 4))
 }
 
-const VoxelPumpkin = () => {
+const VoxelDemo = () => {
     const refContainer = useRef()
     const [loading, setLoading] = useState(true)
     const [renderer, setRenderer] = useState()
@@ -73,7 +73,7 @@ const VoxelPumpkin = () => {
             controls.target = target
             setControls(controls)
 
-            loadGLTFModel(scene, '/pumpkin.glb', {
+            loadGLTFModel(scene, '/abc.glb', {
                 receiveShadow: false,
                 castShadow: false
             }).then(() => {
@@ -139,4 +139,4 @@ const VoxelPumpkin = () => {
     )
 }
 
-export default VoxelPumpkin
+export default VoxelDemo

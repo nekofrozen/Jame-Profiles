@@ -17,22 +17,22 @@ import {
 import { HamburgerIcon} from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
-const LinkItem = ({ href, path, target, children, ...props })=> {
+const LinkItem = ({ href, path, target, children, ...props }) => {
     const active = path === href
     const inactiveColor = useColorModeValue('grey200', 'whiteAlpha.900')
     return (
-        <NextLink href={href}>
-            <Link
-            p={2}
-            bg={active ? 'grassTeal' : undefined}
-            color={active ? '#202023' : inactiveColor}
-            target={target}
-            {...props}
-            >
-                {children}
-            </Link>
-        </NextLink>
-    )
+        <NextLink href={href} passHref scroll={false}>
+      <Link
+        p={2}
+        bg={active ? 'grassTeal' : undefined}
+        color={active ? '#202023' : inactiveColor}
+        target={target}
+        {...props}
+      >
+        {children}
+      </Link>
+    </NextLink>
+  )
 }
 
 const Navbar = props => {
@@ -71,9 +71,8 @@ const Navbar = props => {
                 >
                     <LinkItem href="/works" > Works </LinkItem>
                     <LinkItem 
-                        href="https://github.com/nekofrozen" 
+                        href="https://github.com/nekofrozen/Jame-Profiles" 
                         path={path}
-                        target='_blank'
                         display='inline-flex'
                         alignItems="center"
                         style={{ gap: 4}}
@@ -101,7 +100,7 @@ const Navbar = props => {
                                 <NextLink href="/works" passHref>
                                     <MenuItem as={Link}>Works</MenuItem>
                                 </NextLink>
-                                    <MenuItem as={Link} href="https://github.com/nekofrozen">View Source</MenuItem>
+                                    <MenuItem as={Link} href="https://github.com/nekofrozen/Jame-Profiles">View Source</MenuItem>
                             </MenuList>
                         </Menu>
                     </Box>

@@ -73,7 +73,7 @@ const VoxelDemo = () => {
             controls.target = target
             setControls(controls)
 
-            loadGLTFModel(scene, '/abc.glb', {
+            loadGLTFModel(scene, '/myfirstvox-new.glb', {
                 receiveShadow: false,
                 castShadow: false
             }).then(() => {
